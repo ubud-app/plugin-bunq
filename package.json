@@ -1,6 +1,6 @@
 {
 	"name": "@dwimm/plugin-bunq",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "DWIMM Plugin for bunq, a clean alternative to traditional banking",
 	"author": "Sebastian Pekarek <mail@sebbo.net>",
 	"main": "lib/main.js",
@@ -15,7 +15,7 @@
 		"@bunq-community/bunq-js-client": "^0.22.1"
 	},
 	"devDependencies": {
-		"eslint": "^4.19.1",
+		"eslint": "^5.0.1",
 		"eslint-plugin-security": "^1.4.0",
 		"npm-check": "^5.7.1",
 		"nsp": "^3.2.1"
