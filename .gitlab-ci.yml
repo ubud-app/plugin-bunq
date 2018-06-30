@@ -1,0 +1,12 @@
+stages:
+  - check
+  - publish
+
+check_lint:
+  stage: check
+  tags:
+    - matt.sebbo.net
+    - ssh
+  script:
+    - yarn install
+    - yarn run check
