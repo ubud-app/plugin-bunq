@@ -1,6 +1,6 @@
 {
 	"name": "@dwimm/plugin-bunq",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "DWIMM Plugin for bunq, a clean alternative to traditional banking",
 	"author": "Sebastian Pekarek <mail@sebbo.net>",
 	"main": "lib/main.js",
