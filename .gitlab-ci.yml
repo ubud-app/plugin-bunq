@@ -32,7 +32,7 @@ publish_npm:
   script:
     - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
     - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --tags
-    - npm run bump:production
+    - npm run bump
     - npm publish
   only:
     - tags
