@@ -21,6 +21,8 @@ publish_github:
     - git pull
     - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --all
     - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --tags
+  except:
+    - tags
 
 publish_npm:
   stage: publish
@@ -29,6 +31,7 @@ publish_npm:
     - ssh
   script:
     - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+    - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --tags
     - npm run bump:production
     - npm publish
   only:
