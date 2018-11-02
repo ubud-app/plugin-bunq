@@ -5,7 +5,8 @@
 
 
 ## 🤨 What is this plugin for?
-This plugin synchronises your bunq bank accounts with DWIMM
+
+This plugin synchronises your bunq bank accounts with DWIMM. Nothing more. Plain and simple.
 
 
 ## ⬇️ Download
@@ -23,7 +24,7 @@ to this IP address. This can be changed in the settings of the API key in the ap
 
 ## 📚 Credits
 
-- Thanks for the wounderful [bunqJSClient](https://www.npmjs.com/package/@bunq-community/bunq-js-client) by [@bunqCommunity](https://github.com/bunqCommunity)
+Thanks for the wounderful [bunqJSClient](https://www.npmjs.com/package/@bunq-community/bunq-js-client) by [@bunqCommunity](https://github.com/bunqCommunity)
 
 
 ## 👨‍🔧 Copyright and license
