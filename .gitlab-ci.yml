@@ -21,8 +21,6 @@ publish_github:
     - git pull
     - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --all
     - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --tags
-  except:
-    - tags
 
 publish_npm:
   stage: publish

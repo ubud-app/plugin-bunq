@@ -9,8 +9,8 @@
 		"check:eslint": "eslint ./",
 		"check:nsp": "nsp check || true",
 		"check:npm": "npm-check -s",
-		"bump:reset": "npm --no-git-tag-version -f version $(npm view @dwimm/plugin-bunq version || echo 1.0.0)",
-		"bump:production": "npm run bump:reset && npm --no-git-tag-version -f version from-git"
+		"bump:reset": "npm --no-git-tag-version --force version $(npm view @dwimm/plugin-bunq version || echo 1.0.0)",
+		"bump:production": "npm run bump:reset && npm --no-git-tag-version --force version from-git"
 	},
 	"dependencies": {
 		"@bunq-community/bunq-js-client": "^0.27.0"
