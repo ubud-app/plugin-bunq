@@ -10,3 +10,16 @@ check_lint:
   script:
     - yarn install
     - yarn run check
+
+publish_github:
+  stage: publish
+  tags:
+    - matt.sebbo.net
+    - ssh
+  script:
+    - git checkout $CI_COMMIT_REF_NAME
+    - git pull
+    - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --all
+    - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --tags
+  except:
+    - tags
