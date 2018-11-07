@@ -6,7 +6,7 @@
 
 ## 🤨 What is this plugin for?
 
-This plugin synchronises your bunq bank accounts with DWIMM. Nothing more. Plain and simple.
+This plugin synchronises your [bunq](https://www.bunq.com) bank accounts with DWIMM. Nothing more. Plain and simple.
 
 
 ## ⬇️ Download
