@@ -12,7 +12,7 @@
 		"bump": "jq -M \".version=\\\"$CI_COMMIT_TAG\\\"\" package.json|sponge package.json"
 	},
 	"dependencies": {
-		"@bunq-community/bunq-js-client": "^0.30.0"
+		"@bunq-community/bunq-js-client": "^0.31.0"
 	},
 	"devDependencies": {
 		"eslint": "^5.9.0",
