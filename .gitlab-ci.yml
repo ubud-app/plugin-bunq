@@ -8,8 +8,8 @@ check_lint:
     - matt.sebbo.net
     - ssh
   script:
-    - yarn install
-    - yarn run check
+    - npm install
+    - npm run check
 
 publish_github:
   stage: publish
