@@ -4,10 +4,9 @@
 	"author": "Sebastian Pekarek <mail@sebbo.net>",
 	"main": "lib/main.js",
 	"scripts": {
-		"check": "npm run check:eslint && npm run check:npm && npm run check:nsp",
-		"check:quick": "npm run check:eslint && npm run check:nsp",
+		"check": "npm run check:eslint && npm run check:npm",
+		"check:quick": "npm run check:eslint",
 		"check:eslint": "eslint ./",
-		"check:nsp": "npm_config_audit_level=moderate npm audit",
 		"check:npm": "npm-check -s -p",
 		"bump": "jq -M \".version=\\\"$CI_COMMIT_TAG\\\"\" package.json|sponge package.json"
 	},
