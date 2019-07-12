@@ -2,6 +2,7 @@
 	"name": "@dwimm/plugin-bunq",
 	"description": "DWIMM Plugin for bunq, a clean alternative to traditional banking",
 	"author": "Sebastian Pekarek <mail@sebbo.net>",
+	"homepage": "https://github.com/dwimm/plugin-bunq",
 	"license": "MIT",
 	"main": "lib/main.js",
 	"scripts": {
@@ -26,7 +27,15 @@
 		"node": ">=10.0.0"
 	},
 	"org_dwimm": {
-		"customName": "N26",
-		"help": "https://github.com/dwimm/plugin-bunq#-settings"
+		"name": "bunq",
+		"help": "https://github.com/dwimm/plugin-bunq#-settings",
+		"responsibilities": [
+			{
+				"name": "bunq",
+				"website": "https://www.bunq.com/",
+				"bic": ["BUNQNL2A"],
+				"account": true
+			}
+		]
 	}
 }
