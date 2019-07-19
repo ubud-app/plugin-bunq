@@ -1,6 +1,7 @@
 stages:
   - check
   - publish
+  - notify
 
 check_lint:
   stage: check
@@ -34,5 +35,15 @@ publish_npm:
     - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --tags
     - npm run bump
     - npm publish
+  only:
+    - tags
+
+notify:
+  stage: notify
+  tags:
+    - matt.sebbo.net
+    - ssh
+  script:
+    - curl -X "POST" "https://api.repository.dwimm.org/webhooks/update-plugin/${WEBHOOK_SECRET}"
   only:
     - tags
