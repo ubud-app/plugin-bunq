@@ -6,12 +6,12 @@
 
 ## 🤨 What is this plugin for?
 
-This plugin synchronises your [bunq](https://www.bunq.com) bank accounts with DWIMM. Nothing more. Plain and simple.
+This plugin synchronises your [bunq](https://www.bunq.com) bank accounts with [ubud](https://ubud.club). Nothing more. Plain and simple.
 
 
 ## ⬇️ Download
 
-Please download and install this plugin via your DWIMM Web UI. You woun't need to clone this repository by yourself unless you want to change something.
+Please download and install this plugin via your ubud UI. You woun't need to clone this repository by yourself unless you want to change something.
 
 
 ## 🔧 Settings

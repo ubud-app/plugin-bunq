@@ -1,8 +1,8 @@
 {
-	"name": "@dwimm/plugin-bunq",
-	"description": "DWIMM Plugin for bunq, a clean alternative to traditional banking",
+	"name": "@ubud-app/plugin-bunq",
+	"description": "ubud plugin for bunq, a clean alternative to traditional banking",
 	"author": "Sebastian Pekarek <mail@sebbo.net>",
-	"homepage": "https://github.com/dwimm/plugin-bunq",
+	"homepage": "https://github.com/ubud-app/plugin-bunq",
 	"license": "MIT",
 	"main": "lib/main.js",
 	"scripts": {
@@ -13,7 +13,7 @@
 		"bump": "jq -M \".version=\\\"$CI_COMMIT_TAG\\\"\" package.json|sponge package.json"
 	},
 	"bugs": {
-		"url": "https://github.com/dwimm/plugin-bunq/issues"
+		"url": "https://github.com/ubud-app/plugin-bunq/issues"
 	},
 	"dependencies": {
 		"@bunq-community/bunq-js-client": "^0.42.1"
@@ -24,14 +24,14 @@
 		"npm-check": "^5.9.0"
 	},
 	"peerDependencies": {
-		"@dwimm/server": "0"
+		"@ubud-app/server": "0"
 	},
 	"engines": {
 		"node": ">=10.0.0"
 	},
-	"org_dwimm": {
+	"ubud": {
 		"name": "bunq",
-		"help": "https://github.com/dwimm/plugin-bunq#-settings",
+		"help": "https://github.com/ubud-app/plugin-bunq#-settings",
 		"responsibilities": [
 			{
 				"name": "bunq",

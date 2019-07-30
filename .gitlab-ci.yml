@@ -20,8 +20,8 @@ publish_github:
   script:
     - git checkout $CI_COMMIT_REF_NAME
     - git pull
-    - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --all
-    - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --tags
+    - git push --force "https://${GITHUB_AUTH}@github.com/ubud-app/plugin-bunq.git" --all
+    - git push --force "https://${GITHUB_AUTH}@github.com/ubud-app/plugin-bunq.git" --tags
   except:
     - tags
 
@@ -32,9 +32,9 @@ publish_npm:
     - ssh
   script:
     - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
-    - git push --force "https://${GITHUB_AUTH}@github.com/dwimm/plugin-bunq.git" --tags
+    - git push --force "https://${GITHUB_AUTH}@github.com/ubud-app/plugin-bunq.git" --tags
     - npm run bump
-    - npm publish
+    - npm publish --access public
   only:
     - tags
 
@@ -44,6 +44,6 @@ notify:
     - matt.sebbo.net
     - ssh
   script:
-    - curl -X "POST" "https://api.repository.dwimm.org/webhooks/update-plugin/${WEBHOOK_SECRET}"
+    - curl -X "POST" "https://beacon.ubud.club/webhooks/update-plugin/${WEBHOOK_SECRET}"
   only:
     - tags
