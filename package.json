@@ -19,12 +19,12 @@
 		"@bunq-community/bunq-js-client": "^0.42.1"
 	},
 	"devDependencies": {
-		"eslint": "^6.0.1",
+		"eslint": "^6.6.0",
 		"eslint-plugin-security": "^1.4.0",
 		"npm-check": "^5.9.0"
 	},
 	"peerDependencies": {
-		"@ubud-app/server": "0"
+		"@ubud-app/server": "1"
 	},
 	"engines": {
 		"node": ">=10.0.0"
@@ -36,7 +36,9 @@
 			{
 				"name": "bunq",
 				"website": "https://www.bunq.com/",
-				"bic": ["BUNQNL2A"],
+				"bic": [
+					"BUNQNL2A"
+				],
 				"account": true
 			}
 		]
