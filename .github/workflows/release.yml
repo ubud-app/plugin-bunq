@@ -1,0 +1,47 @@
+name: Release
+on:
+  push:
+    branches:
+      - develop
+      - master
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+      - uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: modules-${{ hashFiles('**/package-lock.json') }}
+      - uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            npm-
+      - name: npm ci
+        run: |
+          if [ ! -d "./node_modules" ]; then
+              npm ci
+          fi
+      - run: npm run check
+  release:
+    runs-on: ubuntu-latest
+    needs: [check]
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          registry-url: 'https://registry.npmjs.org'
+      - uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: modules-${{ hashFiles('**/package-lock.json') }}
+      - name: semantic-release
+        run: npx semantic-release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}

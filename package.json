@@ -9,8 +9,7 @@
 		"check": "npm run check:eslint && npm run check:npm",
 		"check:quick": "npm run check:eslint",
 		"check:eslint": "eslint ./",
-		"check:npm": "npm-check -s -p",
-		"bump": "jq -M \".version=\\\"$CI_COMMIT_TAG\\\"\" package.json|sponge package.json"
+		"check:npm": "npm-check -s -p"
 	},
 	"bugs": {
 		"url": "https://github.com/ubud-app/plugin-bunq/issues"
@@ -19,9 +18,13 @@
 		"@bunq-community/bunq-js-client": "^0.42.1"
 	},
 	"devDependencies": {
+		"@semantic-release/changelog": "^5.0.0",
+		"@semantic-release/exec": "^5.0.0",
+		"@sentry/webpack-plugin": "^1.9.3",
 		"eslint": "^6.6.0",
 		"eslint-plugin-security": "^1.4.0",
-		"npm-check": "^5.9.0"
+		"npm-check": "^5.9.0",
+		"semantic-release": "^17.0.1"
 	},
 	"peerDependencies": {
 		"@ubud-app/server": "1"

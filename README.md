@@ -29,4 +29,4 @@ Thanks for the wounderful [bunqJSClient](https://www.npmjs.com/package/@bunq-com
 
 ## 👨‍🔧 Copyright and license
 
-&copy; Sebastian Pekarek under the [MIT license](LICENSE).
+&copy; Sebastian Pekarek under the MIT license.
