@@ -15,13 +15,13 @@
 		"url": "https://github.com/ubud-app/plugin-bunq/issues"
 	},
 	"dependencies": {
-		"@bunq-community/bunq-js-client": "^0.42.1"
+		"@bunq-community/bunq-js-client": "^1.0.3"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^5.0.0",
 		"@semantic-release/exec": "^5.0.0",
 		"@sentry/webpack-plugin": "^1.9.3",
-		"eslint": "^6.6.0",
+		"eslint": "^6.8.0",
 		"eslint-plugin-security": "^1.4.0",
 		"npm-check": "^5.9.0",
 		"semantic-release": "^17.0.1"
