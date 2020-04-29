@@ -15,19 +15,19 @@
 		"url": "https://github.com/ubud-app/plugin-bunq/issues"
 	},
 	"dependencies": {
-		"@bunq-community/bunq-js-client": "^1.0.3"
+		"@bunq-community/bunq-js-client": "^1.1.2"
 	},
 	"devDependencies": {
-		"@semantic-release/changelog": "^5.0.0",
+		"@semantic-release/changelog": "^5.0.1",
 		"@semantic-release/exec": "^5.0.0",
-		"@sentry/webpack-plugin": "^1.9.3",
+		"@sentry/webpack-plugin": "^1.11.1",
 		"eslint": "^6.8.0",
 		"eslint-plugin-security": "^1.4.0",
-		"npm-check": "^5.9.0",
-		"semantic-release": "^17.0.1"
+		"npm-check": "^5.9.2",
+		"semantic-release": "^17.0.7"
 	},
 	"peerDependencies": {
-		"@ubud-app/server": "1"
+		"@ubud-app/server": ">=1.0.0"
 	},
 	"engines": {
 		"node": ">=10.0.0"
