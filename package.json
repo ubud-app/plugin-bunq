@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"main": "lib/main.js",
 	"scripts": {
-		"check": "npm run check:eslint && npm run check:npm",
+		"check": "npm run check:eslint",
 		"check:quick": "npm run check:eslint",
 		"check:eslint": "eslint ./",
 		"check:npm": "npm-check -s -p"
@@ -22,6 +22,7 @@
 		"@semantic-release/exec": "^5.0.0",
 		"@sentry/webpack-plugin": "^1.12.0",
 		"eslint": "^7.5.0",
+		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-security": "^1.4.0",
 		"npm-check": "^5.9.2",
 		"semantic-release": "^17.1.1"
