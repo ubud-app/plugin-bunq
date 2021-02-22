@@ -21,11 +21,11 @@
 		"@semantic-release/changelog": "^5.0.1",
 		"@semantic-release/exec": "^5.0.0",
 		"@sentry/webpack-plugin": "^1.14.0",
-		"eslint": "^7.18.0",
+		"eslint": "^7.20.0",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-security": "^1.4.0",
 		"npm-check": "^5.9.2",
-		"semantic-release": "^17.3.7"
+		"semantic-release": "^17.3.9"
 	},
 	"peerDependencies": {
 		"@ubud-app/server": ">=1.0.0"
