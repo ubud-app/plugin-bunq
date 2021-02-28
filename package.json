@@ -28,7 +28,7 @@
 		"semantic-release": "^17.3.9"
 	},
 	"peerDependencies": {
-		"@ubud-app/server": ">=1.0.0"
+		"@ubud-app/server": ">=0.3.0"
 	},
 	"engines": {
 		"node": ">=10.0.0"
