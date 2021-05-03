@@ -20,8 +20,8 @@
 	"devDependencies": {
 		"@semantic-release/changelog": "^5.0.1",
 		"@semantic-release/exec": "^5.0.0",
-		"@sentry/webpack-plugin": "^1.15.0",
-		"eslint": "^7.23.0",
+		"@sentry/webpack-plugin": "^1.15.1",
+		"eslint": "^7.24.0",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-security": "^1.4.0",
 		"npm-check": "^5.9.2",
