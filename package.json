@@ -18,14 +18,14 @@
 		"@bunq-community/bunq-js-client": "^1.1.2"
 	},
 	"devDependencies": {
-		"@semantic-release/changelog": "^5.0.1",
-		"@semantic-release/exec": "^5.0.0",
+		"@semantic-release/changelog": "^6.0.0",
+		"@semantic-release/exec": "^6.0.1",
 		"@sentry/webpack-plugin": "^1.17.1",
 		"eslint": "^7.32.0",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-security": "^1.4.0",
 		"npm-check": "^5.9.2",
-		"semantic-release": "^17.4.7"
+		"semantic-release": "^18.0.0"
 	},
 	"peerDependencies": {
 		"@ubud-app/server": ">=0.3.0"
