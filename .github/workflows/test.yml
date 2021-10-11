@@ -12,19 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
-      - uses: actions/cache@v1
         with:
-          path: node_modules
-          key: modules-${{ hashFiles('**/package-lock.json') }}
-      - uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: npm-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            npm-
-      - name: npm ci
-        run: |
-          if [ ! -d "./node_modules" ]; then
-              npm ci
-          fi
+          node-version: '14'
+          cache: 'npm'
+      - run: npm ci
       - run: npm run check
