@@ -18,20 +18,20 @@
 		"@bunq-community/bunq-js-client": "^1.1.2"
 	},
 	"devDependencies": {
-		"@semantic-release/changelog": "^6.0.0",
-		"@semantic-release/exec": "^6.0.1",
-		"@sentry/webpack-plugin": "^1.17.1",
-		"eslint": "^7.32.0",
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/exec": "^6.0.3",
+		"@sentry/webpack-plugin": "^2.7.1",
+		"eslint": "^8.49.0",
 		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-security": "^1.4.0",
-		"npm-check": "^5.9.2",
-		"semantic-release": "^18.0.0"
+		"eslint-plugin-security": "^1.7.1",
+		"npm-check": "^6.0.1",
+		"semantic-release": "^22.0.0"
 	},
 	"peerDependencies": {
 		"@ubud-app/server": ">=0.3.0"
 	},
 	"engines": {
-		"node": ">=10.0.0"
+		"node": ">=14.0.0"
 	},
 	"ubud": {
 		"name": "bunq",
